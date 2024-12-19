@@ -1,19 +1,14 @@
 package com.phonebook.tests.restassured;
 
-import com.phonebook.dto.AllContactsDto;
 import com.phonebook.dto.ContactDto;
-import com.phonebook.dto.ErrorDto;
 import io.restassured.http.ContentType;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.Map;
-
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
 
-public class UpdateContactsTests extends TestBase {
+public class PutContactsTests extends TestBase {
 
 
     String id;
